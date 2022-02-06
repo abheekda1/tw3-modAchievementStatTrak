@@ -1,12 +1,11 @@
 pipeline:
-
   prep-release:
     image: alpine:latest
     commands:
       - mkdir -p modAchievementStatTrak
       - mv content/ modAchievementStatTrak/
       - apk update
-      - apk add zip -y
+      - apk add zip
       - zip -r modAchievementStatTrak.zip modAchievementStatTrak/
     when:
       event: tag
@@ -19,16 +18,4 @@ pipeline:
       files: "*.zip"
       draft: true
     when:
-      tag: *a
-
-  release-beta:
-    image: plugins/github-release
-    settings:
-      api_key:
-        from_secret: github_token
-      files: "*.zip"
-      draft: true
-      prerelease: true
-    when:
-      tag:
-        exclude: [ *a ]
+      event: tag
