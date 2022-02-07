@@ -152,6 +152,16 @@ function getFormattedAchievementStats(statList : array<EStatistic>) : string
         currentName = getAchievmentStatName(currentRawName);
         currentVal = getAchievementStatVal(statList[i]);
 
+        // If allowing spoilers was not toggled on
+        if (!theGame.GetInGameConfigWrapper().GetVarValue('ModStatTrak', 'AllowSpoilers'))
+        {
+            if (currentName == "Rad Steez, Bro!" || currentName == "Moo-rderer")
+            {
+                // Don't print and continue the loop
+                continue;
+            }
+        }
+
         if (i != 0)
         {
             achievementString += "<br><br>" + currentRawName + ": " + "<font color='#00ff00'>" + currentVal + "</font>" + "<br>" + "Achievement: " + "<font color='#0088ff'>" + currentName + "</font>";

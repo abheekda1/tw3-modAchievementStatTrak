@@ -1,0 +1,8 @@
+;meta[language=en]
+; id      |key(hex)|key(str)| text
+;
+; Achievement book name
+2116720001|        |item_name_ach_stats|StatTrak
+2116720002|        |option_dlc_stattrak|StatTrak
+2116720003|        |option_AllowSpoilers|Allow Spoilers
+2116720004|        |panel_ModStatTrak|StatTrak
