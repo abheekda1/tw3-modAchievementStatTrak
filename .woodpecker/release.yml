@@ -4,7 +4,7 @@ pipeline:
     commands:
       - apk update
       - apk add zip
-      - zip -r StatTrak.zip {dlc,mods,bin}/
+      - zip -r StatTrak.zip dlc mods bin
     when:
       event: tag
 
