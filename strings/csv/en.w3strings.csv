@@ -5,4 +5,7 @@
 2116720001|        |item_name_ach_stats|StatTrak
 2116720002|        |option_dlc_stattrak|StatTrak
 2116720003|        |option_AllowSpoilers|Allow Spoilers
-2116720004|        |panel_ModStatTrak|StatTrak
+2116720004|        |panel_Mods|Mods
+2116720005|        |panel_ModStatTrak|StatTrak
+2116720006|        |panel_ModStatTrak_name|StatTrak
+2116720007|        |panel_ModStatTrak_main_settings|Main Settings
