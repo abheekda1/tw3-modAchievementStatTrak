@@ -1,2 +1,5 @@
-src/packed/*
-src/StatTrak/install_log.xml
+src/*
+
+#!src/
+#!src/StatTrak
+!src/StatTrak/files
