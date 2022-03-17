@@ -15,4 +15,5 @@ jobs:
           language: 'en'
       - uses: endbug/add-and-commit@v8
         with:
+            default_author: github_actions
             message: '[CI] Update W3Strings'
